@@ -10,6 +10,12 @@
   --light-color: #f4f4fd;
   --white-color: #ffffff;
   --pressed-state-color: #404bbf;
+  --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --footer-icon-gradient: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
 }
 
 /*
@@ -67,7 +73,7 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-/*  outline: 1px solid red; */
+  /*  outline: 1px solid red; */
   margin: 0 auto;
 }
 
@@ -150,6 +156,10 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--dark-color);
+  background-image: var(--bg-gradient), url(../img/people_office_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*
 .main-title-items {
@@ -209,6 +219,18 @@ body {
 .features-list {
   display: flex;
   gap: 24px;
+}
+
+.feature-figure {
+  background-color: var(--light-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.feature-icon {
+  fill: var(--dark-color);
+  padding-top: 24px;
+  padding-left: 100px;
 }
 
 .features-title {
@@ -288,13 +310,12 @@ body {
 }
 
 .team-foto {
- display: block;
+  display: block;
 }
 
 .team-item {
   padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 
 .team-titel {
@@ -310,14 +331,50 @@ body {
   line-height: 1.5;
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 8px;
 }
 
+.soc-list,
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.soc-link,
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.soc-icon {
+  fill: var(--light-color);
+}
 /* _______________________ FOOTER __________________________*/
 
 .footer {
   background-color: var(--dark-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.footer-container-list {
+  display: flex;
+  gap: 120px;
 }
 
 .footer-logo {
@@ -335,6 +392,26 @@ body {
   color: var(--accent-color);
   max-width: 264px;
   margin-top: 16px;
+}
+
+.footer-soc-text {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.footer-soc-list {
+  gap: 16px;
+}
+
+.footer-soc-link {
+  background: var(--footer-icon-gradient);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--success-color);
 }
 
 /*______________________________________PORTFOLIO_______________________*/
