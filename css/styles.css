@@ -547,12 +547,12 @@ body {
 }
 
 .footer-soc-link {
-  background: var(--footer-icon-gradient);
+  background-color: #4d5ae5;
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  background-color: #4d5ae5;
+  background-color: #31d0aa;
 }
 
 /*______________________________________PORTFOLIO_______________________*/
