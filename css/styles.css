@@ -79,7 +79,9 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--accent-color);
+  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -101,6 +103,12 @@ body {
 .header-list {
   display: flex;
   gap: 40px;
+}
+
+.header-list-point {
+  position: relative; 
+  color: #404bbf; 
+
 }
 
 .logo,
@@ -138,6 +146,21 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-color);
   padding: 24px 0 24px;
+
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .current {
@@ -164,6 +187,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-link:hover,
@@ -188,6 +212,7 @@ body {
   max-width: 1440px;
   height: 600px;
   margin: 0 auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
 }
 /*
 .main-title-items {
@@ -229,6 +254,7 @@ body {
   padding-right: 32px;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-btn:hover,
@@ -422,12 +448,6 @@ body {
 .soc-icon {
   fill: var(--light-color);
 }
-
-/* Stilregeln für den Übergangseffekt */
-.transition {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Übergangseffekt für background-color */
-}
-
 
 /*___________section customers ______________*/
 
