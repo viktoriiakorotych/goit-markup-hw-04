@@ -544,10 +544,12 @@ body {
 }
 
 /*___________ section portfolio ______________*/
-
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 120px 0 120px 0;
+}
+
+.portfolio-main-title{
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -557,20 +559,20 @@ body {
   row-gap: 48px;
 }
 
+.portfolio-list-point {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-block {
   width: 360px;
-}
-
-.portfolio-link {
-  display: block;
+  border: 1px solid var(--accent-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-/*  border: 0.5px solid var(--light-color); */
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-foto {
@@ -579,12 +581,11 @@ body {
 
 .portfolio-item {
   border: 1px solid var(--accent-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  border-top: 0px;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
+  border-top: 0;
 }
 
 .portfolio-titel {
@@ -593,10 +594,25 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  color: var(--dark-color);
 }
 
 .portfolio-text {
   line-height: 1.5;
   color: var(--text-color);
+}
+
+/*_________________________ visually-hidden _________*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
