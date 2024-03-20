@@ -105,7 +105,7 @@ body {
   gap: 40px;
 }
 
-.header-list-point {
+.header-list-point a {
   position: relative; 
   color: #404bbf;
 }
@@ -144,9 +144,9 @@ body {
   cursor: pointer;
   letter-spacing: 0.02em;
   padding: 24px 0 24px;
-  position: relative;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #404bbf;
+
 }
 
 .header-link::after {
