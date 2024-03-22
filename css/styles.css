@@ -149,19 +149,20 @@ body {
 
 }
 
-.header-link::after {
+.current::after {
   content: '';
   width: 100%;
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
-  background-color: #404bbf;
+  background-color: black;
   border-radius: 2px;
 }
 
 .current {
-  color: var(--primary-brand-color);
+  color: #404bbf;
+  position: relative;
 }
 
 .header-link:hover,
