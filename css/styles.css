@@ -105,28 +105,25 @@ body {
   gap: 40px;
 }
 
-.header-list-point a {
-  position: relative; 
-  color: #404bbf;
-}
+
 
 .logo,
 .logo-web {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--dark-color);
 }
 
 .logo {
   margin-right: 76px;
+  color: #2E2F42;
 }
 
 .logo-web {
-  color: var(--primary-brand-color);
+  color: #4D5AE5;
 }
 
 .list {
@@ -144,7 +141,7 @@ body {
   cursor: pointer;
   letter-spacing: 0.02em;
   padding: 24px 0 24px;
-
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -156,7 +153,7 @@ body {
   left: 0;
   bottom: -1px;
   height: 4px;
-  background-color: black;
+  background-color: #404bbf;
   border-radius: 2px;
 }
 
@@ -203,14 +200,13 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--dark-color);
-  background-image: var(--bg-gradient), url(../img/people_office_bg.jpg);
+  background-image: var(--bg-gradient), url(../images/people_office_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   height: 600px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
 }
 /*
 .main-title-items {
@@ -520,12 +516,22 @@ body {
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: calc(21 / 18);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light-color);
+  color: #4D5AE5;
+}
+
+.logo-web-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F4F4FD;
 }
 
 .footer-text {
@@ -600,6 +606,12 @@ body {
 }
 
 .portfolio-main-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   margin-bottom: 72px;
 }
 
